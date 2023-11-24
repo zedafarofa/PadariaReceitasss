@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir</title>
+    <link rel="stylesheet" href="{% static "css/excluir.css" %}">
+</head>
+<body>
+    <h1>Excluir a comida "{{receita.titulo}}"?</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Excluir</button>
+        <a href="{% url "padaria_list" %}">Cancelar</a>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(226, 169, 169);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+form {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border-style: none;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 16px;
+}
+a {
+  background-color: rgb(231, 213, 213);
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 16px;
+}
+
+button:hover,
+a:hover {
+  cursor: pointer;
+  transition: 0.5ms;
+  transform: scale(1.2);
+}

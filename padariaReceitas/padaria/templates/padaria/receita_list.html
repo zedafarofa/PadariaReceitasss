@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/receitas.css' %}" />
+  </head>
+  <body>
+    {%if receita_list %}
+      <h1 class="tituloPrincipal">Comidas</h1>
+      <a href="{% url 'padaria_create'%}" class="voltar">Voltar</a>
+        {% for receitas in receita_list %}
+        <div>
+          <div class="tituloBotao">
+            <h1 class="titulo">{{receitas.titulo}}</h1>
+            <a href="{% url "receita_delete" pk=receitas.pk %}" class="excluir">Excluir</a>
+          </div>
+          <p>{{receitas.descricao}}</p>
+        </div>
+        {% endfor%}
+
+    {% else %}
+      <p>Não há receitas</p>
+      <a href="{% url "padaria_create" %}">Voltar</a>
+    {% endif %}
+  </body>
+</html>

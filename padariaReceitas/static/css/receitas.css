@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Merienda:wght@500&display=swap");
+
+body {
+  background-color: rgb(226, 169, 169);
+  margin: 100px;
+}
+
+.tituloPrincipal {
+  text-align: center;
+  font-family: "Merienda", cursive;
+  font-size: 32px;
+}
+
+.titulo {
+  text-transform: capitalize;
+  font-family: "Merienda", cursive;
+  font-size: 25px;
+}
+
+.excluir {
+  background-color: red;
+  padding: 0 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 16px;
+}
+
+.excluir:hover {
+  color: whitesmoke;
+}
+
+.tituloBotao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  text-transform: capitalize;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  padding-bottom: 16px;
+  margin-top: 0;
+}
+
+.voltar {
+  background-color: rgb(251, 251, 251);
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: black;
+}
+
+.voltar:hover {
+  transform: scale(1.2);
+  background-color: black;
+  color: whitesmoke;
+}
